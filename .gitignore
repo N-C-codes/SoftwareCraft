@@ -1,2 +1,3 @@
-qa-training
+__pycache__/
+qa-training/
 bridge_example.py
