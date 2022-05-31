@@ -18,7 +18,8 @@ class Rectangle:
     def perimeter(self, length, width):
         return 2 * (length + width)
     
-class BridgeClass:
+class Shape:
+    """The bridge class."""
     def __init__(self, shape, length, width=None):
         
         self._shape = shape
@@ -31,8 +32,8 @@ class BridgeClass:
     def perimeter(self):
         return self._shape.perimeter(self._length, self._width)
     
-sq = BridgeClass(Square(), 5)
-rec = BridgeClass(Rectangle(), 4, 5)
+sq = Shape(Square(), 5)
+rec = Shape(Rectangle(), 4, 5)
 
 print(sq.area()) # Should be 25
 print(rec.area()) # Should be 20
